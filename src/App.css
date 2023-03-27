@@ -1,0 +1,60 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.coisos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 70%;
+  gap: 1vh;
+  /* flex-wrap: wrap; */
+}
+
+.negocin{
+
+  height: 100%;
+  width: 30%;
+  border: 2px solid white;
+  overflow: hidden;
+  transition: 0.35s;
+
+}
+
+.negocin img{
+  height: 100%;
+  width: 100%;
+  transition-duration: 1s;
+
+}
+
+.negocin img:hover{
+
+  transform: scale(1.2);
+
+}
+
+
+.coisos:hover > :not(:hover){
+
+  filter: blur(5px) grayscale(100%);
+  transform: scale(0.7);
+
+}
+
+.wast{
+  height: 10%;
+  
+}
